@@ -16,7 +16,9 @@ As an alternative to real data, we have the possibility to generate fake or synt
 Base **R** allow us to genetare data vectors according to different distributions 
 with functions as: `rnorm`, `rexp`, `rpois`, `runif`, `rmultinom`, `sample`...
 
-Also, we can access to several *packages* deployed to generate synthetic data. 
+This CRAN task view contains a list of packages that can be used to generate synthetic data. Also, we list several *packages* to deal with unbalanced data. 
+
+The development of this task view is fairly new and still in its early stages and therefore subject to changes. Suggestions for additions and extensions to the task view maintainer are welcomed.
 
 **Builders**
 
@@ -24,26 +26,37 @@ Also, we can access to several *packages* deployed to generate synthetic data.
 - [conjurer](https://www.foyi.co.nz/posts/documentation/documentationconjurer/) -Builds synthetic data applicable across multiple domains. This package also provides flexibility to control data distribution to make it relevant to many industry examples as described in the [vignette](https://cran.r-project.org/web/packages/conjurer/vignettes/introduction_to_conjurer.html).
 - [datasynthR](https://github.com/jknowles/datasynthR) - Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R!
 - [fabricatr](https://github.com/DeclareDesign/fabricatr) - This package helps researchers imagine what data will look like before they collect it. Researchers can evaluate alternative analysis strategies, find the best one given how the data will look, and precommit before looking at the realized data.
-- [fakeR](https://cran.r-project.org/web/packages/fakeR/vignettes/my-vignette.html) - Simulates Data from a Data Frame of Different Variable Types. Generates fake data from a dataset of different variable types. The package contains the functions simulate_dataset and simulate_dataset_ts to simulate time-independent and time-dependent data. It randomly samples character and factor variables from contingency tables and numeric and ordered factors from a multivariate normal distribution. It currently supports the simulation of stationary and zero-inflated count time series.
+- [fakeR](https://cran.r-project.org/web/packages/fakeR/vignettes/my-vignette.html) - Simulates Data from a Data Frame of Different Variable Types. The package contains the functions `simulate_dataset` and `simulate_dataset_ts` to simulate time-independent and time-dependent data. It randomly samples character and factor variables from contingency tables and numeric and ordered factors from a multivariate normal distribution. It currently supports the simulation of stationary and zero-inflated count time series.
 - [humanleague](https://github.com/virgesmith/humanleague): Synthetic Population Generator. An R package for microsynthesising populations from marginal and (optionally) seed data. 
 - [OpenSDPsynthR](https://github.com/opensdp/OpenSDPsynthR) - Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
 - [sdglinkage](https://rdrr.io/cran/sdglinkage/) - Synthetic Data Generation for Linkage Methods Development. A tool for synthetic data generation that can be used for linkage method development, with elements of i) gold standard file with complete and accurate information and ii) linkage files that are corrupted as we often see in raw dataset.
 - [SimMultiCorrData](https://github.com/AFialkowski/SimMultiCorrData) - The goal of SimMultiCorrData is to generate continuous (normal or non-normal), binary, ordinal, and count (Poisson or Negative Binomial) variables with a specified correlation matrix. It can also produce a single continuous variable. This package can be used to simulate data sets that mimic real-world situations (i.e. clinical data sets, plasmodes, as in Vaughan et al., 2009).
+- [simPop](https://github.com/statistikat/simPop) - Simulation of Complex Synthetic Data Information. Tools and methods to simulate populations for surveys based on auxiliary data. The tools include model-based methods, calibration and combinatorial optimization algorithms.
 - [simstudy](https://cran.r-project.org/web/packages/simstudy/vignettes/simstudy.html) - This package has a collection of functions that allow users to generate simulated data sets in order to explore modeling techniques or better understand data generating processes.
 - [synthpop](https://www.synthpop.org.uk/index.html) - This package for R allows users to create synthetic versions of confidential individual-level data for use by researchers interested in making inferences about the population that the data represent. It allows the synthesis process to be customised in many different ways according to the characteristics of the data being synthesised.
-- [wakefield](https://github.com/trinker/wakefield) - A pckage designed to quickly generate random data sets. The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
 
 **Specific types of data**
 
 - [survsim](https://www.jstatsoft.org/article/view/v059i02) - Simulation of Simple and Complex Survival Data. Simulation of simple and complex survival data including recurrent and multiple events and competing risks.
 - [sim.survdata()](https://cran.r-project.org/web/packages/coxed/vignettes/simulating_survival_data.html) function allows to generate a survival dataset. This function belongs to the [coxed](https://github.com/jkropko/coxed) package.
+- [fakeR](https://cran.r-project.org/web/packages/fakeR/vignettes/my-vignette.html) - Simulates Data from a Data Frame of Different Variable Types. The package contains the functions `simulate_dataset` and `simulate_dataset_ts` to simulate time-independent and time-dependent data. It randomly samples character and factor variables from contingency tables and numeric and ordered factors from a multivariate normal distribution. It currently supports the simulation of stationary and zero-inflated count time series.
 - [synthesis](https://github.com/zejiang-unsw/synthesis#readme) - Synthetic data generator. Generate synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems.
 
 **Datasets**
 
 - [rcorpora](https://github.com/gaborcsardi/rcorpora) - A collection of small text corpora of interesting data. Some examples: names of animals: birds, dinosaurs, dogs; foods: beer categories, pizza toppings; geography: English towns, rivers, oceans; humans: authors, US presidents, occupations; science: elements, planets; words: adjectives, verbs, proverbs, US president quotes.
-- [NHSRdatasets](https://cran.r-project.org/web/packages/NHSRdatasets/index.html) - Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
 - [fakir](https://thinkr-open.github.io/fakir/) - The goal of {fakir} is to provide fake datasets that can be used to teach R.
+- [NHSRdatasets](https://cran.r-project.org/web/packages/NHSRdatasets/index.html) - Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
+- [wakefield](https://github.com/trinker/wakefield) - A package designed to quickly generate random data sets. The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
+
+**Imbalanced data**
+
+- [ebal](https://web.stanford.edu/~jhain/ebalancepage.html) - Entropy reweighting to create balanced samples. Implements entropy balancing, a data preprocessing procedure that allows users to reweight a dataset such that the covariate distributions in the reweighted data satisfy a set of user specified moment conditions. This can be useful to create balanced samples in observational studies with a binary treatment where the control group data can be reweighted to match the covariate moments in the treatment group. Entropy balancing can also be used to reweight a survey sample to known characteristics from a target population.
+- [imbalance](https://github.com/ncordon/imbalance) - Preprocessing Algorithms for Imbalanced DatasetsClass imbalance usually damages the performance of classifiers. This package provides a set of tools to work with imbalanced datasets: novel oversampling algorithms, filtering of instances and evaluation of synthetic instances.
+- [IRIC](https://github.com/shuzhiquan/IRIC) - An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification. - [ROSE](https://journal.r-project.org/archive/2014/RJ-2014-008/index.html) - Random Over-Sampling Examples. Thi package provides functions to deal with binary classification problems in the presence of imbalanced classes. Synthetic balanced samples are generated according to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies to the class imbalance are also provided, as well as different metrics to evaluate a learner accuracy. These are estimated by holdout, bootstrap or cross-validation methods.
+- [smotefamily](https://cran.r-project.org/web/packages/smotefamily/smotefamily.pdf) - A Collection of Oversampling Techniques for Class Imbalance Problem Based on SMOTE. A collection of various oversampling techniques developed from SMOTE is provided. SMOTE is a oversampling technique which synthesizes a new minority instance between a pair of one minority instance and one of its K nearest neighbor.
+- [themis](https://github.com/tidymodels/themis) - Extra Recipes Steps for Dealing with Unbalanced Data. A dataset with an uneven number of cases in each class is said to be unbalanced. Many models produce a subpar performance on unbalanced datasets. A dataset can be balanced by increasing the number of minority cases using SMOTE 2011 <arXiv:1106.1813>, BorderlineSMOTE 2005 <doi:10.1007/11538059_91>; and ADASYN 2008 <https://ieeexplore.ieee.org/document/4633969>;. Or by decreasing the number of majority cases using NearMiss 2003 <https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf>; or Tomek link removal 1976 <https://ieeexplore.ieee.org/document/4309452>;.
+- [unbalanced](https://github.com/dalpozz/unbalanced) - Racing for Unbalanced Methods Selection. This R package implements some well-known techniques for unbalanced classification tasks and provides a racing strategy to adaptively select the best methods for a given dataset, classification algorithms and accuracy measure adopted.
 
 **Miscellaneous**
 
@@ -57,6 +70,8 @@ Also, we can access to several *packages* deployed to generate synthetic data.
 
 **Key references**
 
+- [awesome-data-synthesis](https://github.com/joofio/awesome-data-synthesis)
+
 </div>
 
 ### CRAN packages:
@@ -65,31 +80,31 @@ Also, we can access to several *packages* deployed to generate synthetic data.
 - [charlatan](https://cran.r-project.org/web/packages/charlatan/index.html)
 - [conjurer](https://cran.r-project.org/web/packages/conjurer/index.html)
 - [coxed](https://cran.r-project.org/web/packages/coxed/index.html)
+- [ebal](https://cran.r-project.org/web/packages/ebal/index.html)
 - [fabricatr](https://cran.r-project.org/web/packages/fabricatr/index.html)
 - [fakeR](https://cran.r-project.org/web/packages/fakeR/index.html)
 - [GenOrd](https://cran.r-project.org/web/packages/GenOrd/index.html)
 - [humanleague](https://cran.r-project.org/web/packages/humanleague/index.html)
+- [imbalance](https://cran.r-project.org/web/packages/imbalance/index.html)
 - [MultiOrd](https://cran.r-project.org/web/packages/MultiOrd/index.html)
 - [NHSRdatasets](https://cran.r-project.org/web/packages/NHSRdatasets/index.html)
 - [PoisBinOrdNonNor](https://cran.r-project.org/web/packages/PoisBinOrdNonNor/index.html)
 - [psychmeta](https://cran.r-project.org/web/packages/psychmeta/index.html)
 - [rcorpora](https://cran.r-project.org/web/packages/rcorpora/index.html)
+- [ROSE](https://cran.r-project.org/web/packages/ROSE/index.html)
 - [sdglinkage](https://cran.r-project.org/web/packages/sdglinkage/index.html)
 - [sgr](https://cran.r-project.org/web/packages/sgr/index.html)
 - [SimMultiCorrData](https://cran.r-project.org/web/packages/SimMultiCorrData/index.html)
+- [simPop](https://cran.r-project.org/web/packages/simPop/index.html)
 - [simstudy](https://cran.r-project.org/web/packages/simstudy/index.html)
+- [smotefamily](https://cran.r-project.org/web/packages/smotefamily/index.html)
 - [synthesis](https://cran.r-project.org/web/packages/synthesis/index.html)
 - [synthpop](https://cran.r-project.org/web/packages/synthpop/index.html)
 - [SynthTools](https://cran.r-project.org/web/packages/SynthTools/index.html)
+- [themis](https://cran.r-project.org/web/packages/themis/index.html)
+- [unbalanced](https://cran.r-project.org/web/packages/unbalanced/index.html)
 - [wakefield](https://cran.r-project.org/web/packages/wakefield/index.html)
 - [WikidataR](https://cran.r-project.org/web/packages/WikidataR/index.html)
-
-- []()
-- []()
-- []()
-- []()
-- []()
-
 
 ### Related links:
 
