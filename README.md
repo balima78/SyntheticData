@@ -4,7 +4,7 @@ a draft for a CRAN task view on Synthetic Data
 **Maintainer:** Bruno A Lima                                  
 **Contact:**    balima78 at gmail.com                      
 **Version:**    2021-04-26                                     
-**URL:**        *no link to CRAN*   
+**URL:**        *no link to CRAN yet*   
 
 <div>
 
@@ -27,6 +27,7 @@ The development of this task view is fairly new and still in its early stages an
 - [datasynthR](https://github.com/jknowles/datasynthR) - Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R!
 - [fabricatr](https://github.com/DeclareDesign/fabricatr) - This package helps researchers imagine what data will look like before they collect it. Researchers can evaluate alternative analysis strategies, find the best one given how the data will look, and precommit before looking at the realized data.
 - [fakeR](https://cran.r-project.org/web/packages/fakeR/vignettes/my-vignette.html) - Simulates Data from a Data Frame of Different Variable Types. The package contains the functions `simulate_dataset` and `simulate_dataset_ts` to simulate time-independent and time-dependent data. It randomly samples character and factor variables from contingency tables and numeric and ordered factors from a multivariate normal distribution. It currently supports the simulation of stationary and zero-inflated count time series.
+- [gendata](https://cran.r-project.org/web/packages/gendata/gendata.pdf) - Generate and Modify Synthetic Datasets. Set of functions to create datasets using a correlation matrix.
 - [humanleague](https://github.com/virgesmith/humanleague): Synthetic Population Generator. An R package for microsynthesising populations from marginal and (optionally) seed data. 
 - [OpenSDPsynthR](https://github.com/opensdp/OpenSDPsynthR) - Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
 - [sdglinkage](https://rdrr.io/cran/sdglinkage/) - Synthetic Data Generation for Linkage Methods Development. A tool for synthetic data generation that can be used for linkage method development, with elements of i) gold standard file with complete and accurate information and ii) linkage files that are corrupted as we often see in raw dataset.
@@ -46,7 +47,9 @@ The development of this task view is fairly new and still in its early stages an
 
 - [rcorpora](https://github.com/gaborcsardi/rcorpora) - A collection of small text corpora of interesting data. Some examples: names of animals: birds, dinosaurs, dogs; foods: beer categories, pizza toppings; geography: English towns, rivers, oceans; humans: authors, US presidents, occupations; science: elements, planets; words: adjectives, verbs, proverbs, US president quotes.
 - [fakir](https://thinkr-open.github.io/fakir/) - The goal of {fakir} is to provide fake datasets that can be used to teach R.
+- [NestedCategBayesImpute](https://cran.r-project.org/web/packages/NestedCategBayesImpute/NestedCategBayesImpute.pdf) - Modeling, Imputing and Generating Synthetic Versions of Nested Categorical Data in the Presence of Impossible Combinations. This tool set provides a set of functions to fit the nested Dirichlet process mixture of products of multinomial distributions (NDPMPM) model for nested categorical household data in the presence of impossible combinations. It has direct applications in imputing missing values for and generating synthetic versions of nested household data.
 - [NHSRdatasets](https://cran.r-project.org/web/packages/NHSRdatasets/index.html) - Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
+- [synthACS](http://cran.nexr.com/web/packages/synthACS/synthACS.pdf) - Synthetic Microdata and Spatial MicroSimulation Modeling for ACS Data. Provides access to curated American Community Survey (ACS) base tables. Builds synthetic micro-datasets at any user-specified geographic level with ten default attributes; and, conducts spatial microsimulation modeling (SMSM) via simulated annealing.
 - [wakefield](https://github.com/trinker/wakefield) - A package designed to quickly generate random data sets. The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
 
 **Imbalanced data**
@@ -56,7 +59,7 @@ The development of this task view is fairly new and still in its early stages an
 - [IRIC](https://github.com/shuzhiquan/IRIC) - An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification.
 - [ROSE](https://journal.r-project.org/archive/2014/RJ-2014-008/index.html) - Random Over-Sampling Examples. Thi package provides functions to deal with binary classification problems in the presence of imbalanced classes. Synthetic balanced samples are generated according to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies to the class imbalance are also provided, as well as different metrics to evaluate a learner accuracy. These are estimated by holdout, bootstrap or cross-validation methods.
 - [smotefamily](https://cran.r-project.org/web/packages/smotefamily/smotefamily.pdf) - A Collection of Oversampling Techniques for Class Imbalance Problem Based on SMOTE. A collection of various oversampling techniques developed from SMOTE is provided. SMOTE is a oversampling technique which synthesizes a new minority instance between a pair of one minority instance and one of its K nearest neighbor.
-- [themis](https://github.com/tidymodels/themis) - Extra Recipes Steps for Dealing with Unbalanced Data. A dataset with an uneven number of cases in each class is said to be unbalanced. Many models produce a subpar performance on unbalanced datasets. A dataset can be balanced by increasing the number of minority cases using SMOTE 2011 <arXiv:1106.1813>, BorderlineSMOTE 2005 <doi:10.1007/11538059_91>; and ADASYN 2008 <https://ieeexplore.ieee.org/document/4633969>;. Or by decreasing the number of majority cases using NearMiss 2003 <https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf>; or Tomek link removal 1976 <https://ieeexplore.ieee.org/document/4309452>;.
+- [themis](https://github.com/tidymodels/themis) - Extra Recipes Steps for Dealing with Unbalanced Data. A dataset with an uneven number of cases in each class is said to be unbalanced. Many models produce a subpar performance on unbalanced datasets. A dataset can be balanced by increasing the number of minority cases using [SMOTE 2011](https://arxiv.org/abs/1106.1813), [Borderline-SMOTE 2005](https://link.springer.com/chapter/10.1007/11538059_91); and [ADASYN 2008](https://ieeexplore.ieee.org/document/4633969); or by decreasing the number of majority cases using [NearMiss 2003](https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf); or [Tomek link removal 1976](https://ieeexplore.ieee.org/document/4309452);.
 - [unbalanced](https://github.com/dalpozz/unbalanced) - Racing for Unbalanced Methods Selection. This R package implements some well-known techniques for unbalanced classification tasks and provides a racing strategy to adaptively select the best methods for a given dataset, classification algorithms and accuracy measure adopted.
 
 **Miscellaneous**
@@ -84,10 +87,12 @@ The development of this task view is fairly new and still in its early stages an
 - [ebal](https://cran.r-project.org/web/packages/ebal/index.html)
 - [fabricatr](https://cran.r-project.org/web/packages/fabricatr/index.html)
 - [fakeR](https://cran.r-project.org/web/packages/fakeR/index.html)
+- [gendata](https://cran.r-project.org/web/packages/gendata/index.html)
 - [GenOrd](https://cran.r-project.org/web/packages/GenOrd/index.html)
 - [humanleague](https://cran.r-project.org/web/packages/humanleague/index.html)
 - [imbalance](https://cran.r-project.org/web/packages/imbalance/index.html)
 - [MultiOrd](https://cran.r-project.org/web/packages/MultiOrd/index.html)
+- [NestedCategBayesImpute](https://cran.r-project.org/web/packages/NestedCategBayesImpute/index.html)
 - [NHSRdatasets](https://cran.r-project.org/web/packages/NHSRdatasets/index.html)
 - [PoisBinOrdNonNor](https://cran.r-project.org/web/packages/PoisBinOrdNonNor/index.html)
 - [psychmeta](https://cran.r-project.org/web/packages/psychmeta/index.html)
@@ -99,6 +104,7 @@ The development of this task view is fairly new and still in its early stages an
 - [simPop](https://cran.r-project.org/web/packages/simPop/index.html)
 - [simstudy](https://cran.r-project.org/web/packages/simstudy/index.html)
 - [smotefamily](https://cran.r-project.org/web/packages/smotefamily/index.html)
+- [synthACS](https://cran.r-project.org/web/packages/synthACS/index.html)
 - [synthesis](https://cran.r-project.org/web/packages/synthesis/index.html)
 - [synthpop](https://cran.r-project.org/web/packages/synthpop/index.html)
 - [SynthTools](https://cran.r-project.org/web/packages/SynthTools/index.html)
@@ -114,3 +120,4 @@ The development of this task view is fairly new and still in its early stages an
 -   [CRAN Task View: Missing Data](https://cran.r-project.org/web/views/MissingData.html)
 -   [GitHub repository for this Task
     View](https://github.com/balima78/SyntheticData)
+-   [HEADS-FMUP](https://github.com/HEADS-FMUP)
