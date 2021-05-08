@@ -32,9 +32,12 @@ The development of this task view is fairly new and still in its early stages an
 - [OpenSDPsynthR](https://github.com/opensdp/OpenSDPsynthR) - Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
 - [sdglinkage](https://rdrr.io/cran/sdglinkage/) - Synthetic Data Generation for Linkage Methods Development. A tool for synthetic data generation that can be used for linkage method development, with elements of i) gold standard file with complete and accurate information and ii) linkage files that are corrupted as we often see in raw dataset.
 - [SimMultiCorrData](https://github.com/AFialkowski/SimMultiCorrData) - The goal of SimMultiCorrData is to generate continuous (normal or non-normal), binary, ordinal, and count (Poisson or Negative Binomial) variables with a specified correlation matrix. It can also produce a single continuous variable. This package can be used to simulate data sets that mimic real-world situations (i.e. clinical data sets, plasmodes, as in Vaughan et al., 2009).
-- [simPop](https://github.com/statistikat/simPop) - Simulation of Complex Synthetic Data Information. Tools and methods to simulate populations for surveys based on auxiliary data. The tools include model-based methods, calibration and combinatorial optimization algorithms.
+- [simPop](https://www.jstatsoft.org/article/view/v079i10) - Simulation of Complex Synthetic Data Information. Tools and methods to simulate populations for surveys based on auxiliary data. The tools include model-based methods, calibration and combinatorial optimization algorithms.
 - [simstudy](https://cran.r-project.org/web/packages/simstudy/vignettes/simstudy.html) - This package has a collection of functions that allow users to generate simulated data sets in order to explore modeling techniques or better understand data generating processes.
 - [synthpop](https://www.synthpop.org.uk/index.html) - This package for R allows users to create synthetic versions of confidential individual-level data for use by researchers interested in making inferences about the population that the data represent. It allows the synthesis process to be customised in many different ways according to the characteristics of the data being synthesised.
+- [MicSim](https://microsimulation.pub/articles/00105) - Performing Continuous-Time Microsimulation. This entry-level toolkit allows performing continuous-time microsimulation for a wide range of demographic applications. Given a initial population, mortality rates, divorce rates, marriage rates, education changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population.
+- [sms](https://www.jstatsoft.org/article/view/v068i02) - Spatial Microsimulation. Produce small area population estimates by fitting census data to survey data.
+- [saeSim](https://wahani.github.io/saeSim/) - Tools for the simulation of data in the context of small area estimation. Combine all steps of your simulation - from data generation over drawing samples to model fitting - in one object.
 
 **Specific types of data**
 
@@ -91,6 +94,7 @@ The development of this task view is fairly new and still in its early stages an
 - [GenOrd](https://cran.r-project.org/web/packages/GenOrd/index.html)
 - [humanleague](https://cran.r-project.org/web/packages/humanleague/index.html)
 - [imbalance](https://cran.r-project.org/web/packages/imbalance/index.html)
+- [MicSim](https://cran.r-project.org/web/packages/MicSim/index.html)
 - [MultiOrd](https://cran.r-project.org/web/packages/MultiOrd/index.html)
 - [NestedCategBayesImpute](https://cran.r-project.org/web/packages/NestedCategBayesImpute/index.html)
 - [NHSRdatasets](https://cran.r-project.org/web/packages/NHSRdatasets/index.html)
@@ -98,12 +102,14 @@ The development of this task view is fairly new and still in its early stages an
 - [psychmeta](https://cran.r-project.org/web/packages/psychmeta/index.html)
 - [rcorpora](https://cran.r-project.org/web/packages/rcorpora/index.html)
 - [ROSE](https://cran.r-project.org/web/packages/ROSE/index.html)
+- [saeSim](https://cran.r-project.org/web/packages/saeSim/index.html)
 - [sdglinkage](https://cran.r-project.org/web/packages/sdglinkage/index.html)
 - [sgr](https://cran.r-project.org/web/packages/sgr/index.html)
 - [SimMultiCorrData](https://cran.r-project.org/web/packages/SimMultiCorrData/index.html)
 - [simPop](https://cran.r-project.org/web/packages/simPop/index.html)
 - [simstudy](https://cran.r-project.org/web/packages/simstudy/index.html)
 - [smotefamily](https://cran.r-project.org/web/packages/smotefamily/index.html)
+- [sms](https://cran.r-project.org/web/packages/sms/index.html)
 - [synthACS](https://cran.r-project.org/web/packages/synthACS/index.html)
 - [synthesis](https://cran.r-project.org/web/packages/synthesis/index.html)
 - [synthpop](https://cran.r-project.org/web/packages/synthpop/index.html)
@@ -116,8 +122,8 @@ The development of this task view is fairly new and still in its early stages an
 ### Related links:
 
 -   [CRAN Task Views](https://cran.r-project.org/web/views/)
--   [How to write CRAN TAsk Views](https://cran.r-project.org/web/packages/ctv/vignettes/ctv-howto.pdf)
+-   [How to write CRAN Task Views](https://cran.r-project.org/web/packages/ctv/vignettes/ctv-howto.pdf)
 -   [CRAN Task View: Missing Data](https://cran.r-project.org/web/views/MissingData.html)
--   [GitHub repository for this Task
-    View](https://github.com/balima78/SyntheticData)
+-   [CRAN Task View: Official Statistics & Survey Methodology](https://cran.r-project.org/web/views/OfficialStatistics.html)
+-   [GitHub repository for this TaskView](https://github.com/balima78/SyntheticData)
 -   [HEADS-FMUP](https://github.com/HEADS-FMUP)
