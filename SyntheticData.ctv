@@ -30,8 +30,8 @@ The development of this task view is fairly new and still in its early stages an
 	<li><pkg>conjurer</pkg>:
 	Builds synthetic data applicable across multiple domains. This package also provides flexibility to control data distribution to make it relevant to many industry examples as described in the <a href="https://cran.r-project.org/web/packages/conjurer/vignettes/introduction_to_conjurer.html">vignette</a>.
 	</li>
-  <li><code>datasynthR</code>:
-    Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R! (<a href="https://github.com/jknowles/datasynthR">github repo</a>).
+  <li><github>jknowles/datasynthR</github>:
+    Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R!
   </li>
   <li><pkg>fabricatr</pkg>:
 	This package helps researchers imagine what data will look like before they collect it. Researchers can evaluate alternative analysis strategies, find the best one given how the data will look, and precommit before looking at the realized data (<a href="https://github.com/DeclareDesign/fabricatr">github repo</a>).
@@ -45,8 +45,8 @@ The development of this task view is fairly new and still in its early stages an
   <li><pkg>humanleague</pkg>:
     Synthetic Population Generator. An R package for microsynthesising populations from marginal and (optionally) seed data (<a href="https://github.com/virgesmith/humanleague">github repo</a>).
   </li>
-  <li><code>OpenSDPsynthR</code>:
-    Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user (<a href="https://github.com/opensdp/OpenSDPsynthR">github repo</a>).
+  <li><github>OpenSDP/OpenSDPsynthR</github>:
+    Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
   </li>
   <li><pkg>sdglinkage</pkg>: 
 	Synthetic Data Generation for Linkage Methods Development. A tool for synthetic data generation that can be used for linkage method development, with elements of i) gold standard file with complete and accurate information and ii) linkage files that are corrupted as we often see in raw dataset.
@@ -95,8 +95,8 @@ The development of this task view is fairly new and still in its early stages an
   <li><pkg>rcorpora</pkg>: 
 	A collection of small text corpora of interesting data. Some examples: names of animals: birds, dinosaurs, dogs; foods: beer categories, pizza toppings; geography: English towns, rivers, oceans; humans: authors, US presidents, occupations; science: elements, planets; words: adjectives, verbs, proverbs, US president quotes (<a href="https://github.com/gaborcsardi/rcorpora">github repo</a>).
   </li>
-  <li><code>fakir</code>:
-    The goal of <code>fakir</code> is to provide fake datasets that can be used to teach R. (<a href="https://thinkr-open.github.io/fakir/">website</a>)
+  <li><github>ThinkR-open/fakir</github>:
+    The goal of <code>fakir</code> is to provide fake datasets that can be used to teach R.
   </li>
   <li><pkg>NestedCategBayesImpute</pkg>:
     Modeling, Imputing and Generating Synthetic Versions of Nested Categorical Data in the Presence of Impossible Combinations. This tool set provides a set of functions to fit the nested Dirichlet process mixture of products of multinomial distributions (NDPMPM) model for nested categorical household data in the presence of impossible combinations. It has direct applications in imputing missing values for and generating synthetic versions of nested household data (<a href="https://cran.r-project.org/web/packages/NestedCategBayesImpute/NestedCategBayesImpute.pdf">vignette</a>).
@@ -120,8 +120,8 @@ The development of this task view is fairly new and still in its early stages an
   <li><pkg>imbalance</pkg>:
     Preprocessing Algorithms for Imbalanced DatasetsClass imbalance usually damages the performance of classifiers. This package provides a set of tools to work with imbalanced datasets: novel oversampling algorithms, filtering of instances and evaluation of synthetic instances (<a href="https://github.com/ncordon/imbalance">github repo</a>).
   </li>
-  <li><code>IRIC</code>: 
-	An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification (<a href="https://github.com/shuzhiquan/IRIC">github repo</a>).
+  <li><github>shuzhiquan/IRIC</github>: 
+	An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification.
   </li>
   <li><pkg>ROSE</pkg>:
      Random Over-Sampling Examples. Thi package provides functions to deal with binary classification problems in the presence of imbalanced classes. Synthetic balanced samples are generated according to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies to the class imbalance are also provided, as well as different metrics to evaluate a learner accuracy. These are estimated by holdout, bootstrap or cross-validation methods (<a href="https://journal.r-project.org/archive/2014/RJ-2014-008/index.html">Lunardon et al, 2014</a>).
@@ -152,7 +152,7 @@ The development of this task view is fairly new and still in its early stages an
 	Generation of a chosen number of count, binary, ordinal, and continuous random variables, with specified correlations and marginal properties (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.5362">Demirtas et al, 2012</a>).
   </li>
   <li><pkg>psychmeta</pkg>: 
-	The <code>psychmeta</code> package provides tools for computing bare-bones and psychometric meta-analyses and for generating psychometric data for use in meta-analysis simulations (<a href="https://github.com/psychmeta/psychmeta">github repo</a>).
+	This package provides tools for computing bare-bones and psychometric meta-analyses and for generating psychometric data for use in meta-analysis simulations (<a href="https://github.com/psychmeta/psychmeta">github repo</a>).
   </li>
   <li><pkg>sgr</pkg>:
     Sample Generation by Replacement simulations. The package can be used to perform fake data analysis according to the sample generation by replacement approach. It includes functions for making simple inferences about discrete/ordinal fake data. The package allows to study the implications of fake data for empirical results.
