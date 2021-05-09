@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>CRAN Task View: Synthetic Data with R</title>
+  <link rel="stylesheet" type="text/css" href="../CRAN_web.css" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="citation_title" content="CRAN Task View: Synthetic Data with R" />
+  <meta name="citation_author" content="Bruno A Lima, Joao Almeida" />
+  <meta name="citation_publication_date" content="2021-05-09" />
+  <meta name="citation_public_url" content="https://CRAN.R-project.org/view=SyntheticData" />
+  <meta name="DC.title" content="CRAN Task View: Synthetic Data with R" />
+  <meta name="DC.creator" content="Bruno A Lima, Joao Almeida" />
+  <meta name="DC.issued" content="2021-05-09" />
+  <meta name="DC.identifier" content="https://CRAN.R-project.org/view=SyntheticData" />
+</head>
+
+<body>
+  <h2>CRAN Task View: Synthetic Data with R</h2>
+  <table summary="SyntheticData task view information">
+    <tr><td valign="top"><b>Maintainer:</b></td><td>Bruno A Lima, Joao Almeida</td></tr>
+    <tr><td valign="top"><b>Contact:</b></td><td>&#x62;&#x61;&#x6c;&#x69;&#x6d;&#x61;&#x37;&#x38;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2021-05-09</td></tr>
+    <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=SyntheticData">https://CRAN.R-project.org/view=SyntheticData</a></td></tr>
+  </table>
+
+    <div>
+      <p>
+        Testing and validating applications or data products requires the use of data that is not always available to us. As an alternative to real data, we have the possibility to generate fake or synthetic data in a format similar to real data. This task view collects information on R packages including functionalities to generate synthetic data.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Synthetic_data">
+          Wikipedia
+        </a>
+        defines synthetic data as follows: Synthetic data is &quot;any production data applicable to a given situation that are not obtained by direct measurement&quot; according to the McGraw-Hill Dictionary of Scientific and Technical Terms; where Craig S. Mullins, an expert in data management, defines production data as &quot;information that is persistently stored and used by professionals to conduct business processes.&quot;
+      </p>
+      <p>
+        Base
+        <strong>
+          R
+        </strong>
+        allow us to genetare data vectors according to different distributions with functions as:
+<tt>rnorm</tt>,
+<tt>rexp</tt>,
+<tt>rpois</tt>,
+<tt>runif</tt>,
+<tt>rmultinom</tt>,
+<tt>sample</tt>...
+      </p>
+      <p>
+        This CRAN task view contains a list of packages that can be used to generate synthetic data. Also, several packages to deal with unbalanced data are listed.
+      </p>
+      <p>
+        The development of this task view is fairly new and still in its early stages and therefore subject to changes. Suggestions for additions and extensions to the task view maintainer are welcomed.
+      </p>
+      <p>
+        <strong>
+          Builders
+        </strong>
+      </p>
+      <ul>
+        <li>
+<a href="../packages/charlatan/index.html">charlatan</a>:
+	Makes fake data; inspired from and borrowing some code from Python's faker (
+          <a href="https://github.com/ropensci/charlatan">
+            github repo
+          </a>).
+        </li>
+        <li>
+<a href="../packages/conjurer/index.html">conjurer</a>:
+	Builds synthetic data applicable across multiple domains. This package also provides flexibility to control data distribution to make it relevant to many industry examples as described in the
+          <a href="https://cran.r-project.org/web/packages/conjurer/vignettes/introduction_to_conjurer.html">
+            vignette
+          </a>.
+        </li>
+        <li>
+<tt>datasynthR</tt>:
+    Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R! (
+          <a href="https://github.com/jknowles/datasynthR">
+            github repo
+          </a>).
+        </li>
+        <li>
+<a href="../packages/fabricatr/index.html">fabricatr</a>:
+	This package helps researchers imagine what data will look like before they collect it. Researchers can evaluate alternative analysis strategies, find the best one given how the data will look, and precommit before looking at the realized data (
+          <a href="https://github.com/DeclareDesign/fabricatr">
+            github repo
+          </a>).
+        </li>
+        <li>
+<a href="../packages/fakeR/index.html">fakeR</a>:
+    Simulates Data from a Data Frame of Different Variable Types. The package contains the functions
+<tt>simulate_dataset</tt>
+          and
+<tt>simulate_dataset_ts</tt>
+          to simulate time-independent and time-dependent data. It randomly samples character and factor variables from contingency tables and numeric and ordered factors from a multivariate normal distribution (
+          <a href="https://cran.r-project.org/web/packages/fakeR/vignettes/my-vignette.html">
+            vignette
+          </a>). It currently supports the simulation of stationary and zero-inflated count time series.
+        </li>
+        <li>
+<a href="../packages/gendata/index.html">gendata</a>:
+    Generate and Modify Synthetic Datasets. Set of
+          <a href="https://cran.r-project.org/web/packages/gendata/gendata.pdf">
+            functions
+          </a>
+          to create datasets using a correlation matrix.
+        </li>
+        <li>
+<a href="../packages/humanleague/index.html">humanleague</a>:
+    Synthetic Population Generator. An R package for microsynthesising populations from marginal and (optionally) seed data (
+          <a href="https://github.com/virgesmith/humanleague">
+            github repo
+          </a>).
+        </li>
+        <li>
+<tt>OpenSDPsynthR</tt>:
+    Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user (
+          <a href="https://github.com/opensdp/OpenSDPsynthR">
+            github repo
+          </a>).
+        </li>
+        <li>
+<a href="../packages/sdglinkage/index.html">sdglinkage</a>: 
+	Synthetic Data Generation for Linkage Methods Development. A tool for synthetic data generation that can be used for linkage method development, with elements of i) gold standard file with complete and accurate information and ii) linkage files that are corrupted as we often see in raw dataset.
+        </li>
+        <li>
+<a href="../packages/SimMultiCorrData/index.html">SimMultiCorrData</a>:
+    The goal of SimMultiCorrData is to generate continuous (normal or non-normal), binary, ordinal, and count (Poisson or Negative Binomial) variables with a specified correlation matrix. It can also produce a single continuous variable (
+          <a href="https://github.com/AFialkowski/SimMultiCorrData">
+            github repo
+          </a>). This package can be used to simulate data sets that mimic real-world situations (i.e. clinical data sets, plasmodes, as in Vaughan et al., 2009).
+        </li>
+        <li>
+<a href="../packages/simPop/index.html">simPop</a>:
+    Simulation of Complex Synthetic Data Information. Tools and methods to simulate populations for surveys based on auxiliary data. The tools include model-based methods, calibration and combinatorial optimization algorithms (
+          <a href="https://www.jstatsoft.org/article/view/v079i10">
+            Templ et al, 2017
+          </a>).
+        </li>
+        <li>
+<a href="../packages/simstudy/index.html">simstudy</a>:
+	This package has a collection of functions that allow users to generate simulated data sets in order to explore modeling techniques or better understand data generating processes (
+          <a href="https://cran.r-project.org/web/packages/simstudy/vignettes/simstudy.html">
+            vignette
+          </a>).
+        </li>
+        <li>
+<a href="../packages/synthpop/index.html">synthpop</a>:
+    This package for R allows users to create synthetic versions of confidential individual-level data for use by researchers interested in making inferences about the population that the data represent. It allows the synthesis process to be customised in many different ways according to the characteristics of the data being synthesised (
+          <a href="https://www.synthpop.org.uk/index.html">
+            website
+          </a>).
+        </li>
+        <li>
+<a href="../packages/MicSim/index.html">MicSim</a>:
+    Performing Continuous-Time Microsimulation. This entry-level toolkit allows performing continuous-time microsimulation for a wide range of demographic applications. Given a initial population, mortality rates, divorce rates, marriage rates, education changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population (
+          <a href="https://microsimulation.pub/articles/00105">
+            Zinn, 2014
+          </a>).
+        </li>
+        <li>
+<a href="../packages/sms/index.html">sms</a>:
+    Spatial Microsimulation. Produce small area population estimates by fitting census data to survey data (
+          <a href="https://www.jstatsoft.org/article/view/v068i02">
+            Kavroudakis, 2012
+          </a>).
+        </li>
+        <li>
+<a href="../packages/saeSim/index.html">saeSim</a>:
+    Tools for the simulation of data in the context of small area estimation. Combine all steps of your simulation - from data generation over drawing samples to model fitting - in one object (
+          <a href="https://wahani.github.io/saeSim/">
+            website
+          </a>).
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Specific types of data
+        </strong>
+      </p>
+      <ul>
+        <li>
+<a href="../packages/survsim/index.html">survsim</a>:
+    Simulation of Simple and Complex Survival Data. Simulation of simple and complex survival data including recurrent and multiple events and competing risks (
+          <a href="https://www.jstatsoft.org/article/view/v059i02">
+            Moriña &amp; Navarro, 2012
+          </a>).
+        </li>
+        <li>
+<a href="../packages/coxed/index.html">coxed</a>:
+    with the function
+<tt>sim.survdata()</tt>
+          that allows to generate a survival datasets (
+          <a href="https://cran.r-project.org/web/packages/coxed/vignettes/simulating_survival_data.html">
+            vignette
+          </a>)
+        </li>
+        <li>
+<a href="../packages/fakeR/index.html">fakeR</a>:
+    Simulates Data from a Data Frame of Different Variable Types. The package contains the functions
+<tt>simulate_dataset</tt>
+          and
+<tt>simulate_dataset_ts</tt>
+          to simulate time-independent and time-dependent data. It randomly samples character and factor variables from contingency tables and numeric and ordered factors from a multivariate normal distribution (
+          <a href="https://cran.r-project.org/web/packages/fakeR/vignettes/my-vignette.html">
+            vignette
+          </a>). It currently supports the simulation of stationary and zero-inflated count time series.
+        </li>
+        <li>
+<a href="../packages/synthesis/index.html">synthesis</a>:
+    Synthetic data generator. Generate synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems. (
+          <a href="https://github.com/zejiang-unsw/synthesis#readme">
+            github repo
+          </a>).
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Datasets
+        </strong>
+      </p>
+      <ul>
+        <li>
+<a href="../packages/rcorpora/index.html">rcorpora</a>: 
+	A collection of small text corpora of interesting data. Some examples: names of animals: birds, dinosaurs, dogs; foods: beer categories, pizza toppings; geography: English towns, rivers, oceans; humans: authors, US presidents, occupations; science: elements, planets; words: adjectives, verbs, proverbs, US president quotes (
+          <a href="https://github.com/gaborcsardi/rcorpora">
+            github repo
+          </a>).
+        </li>
+        <li>
+<tt>fakir</tt>:
+    The goal of
+<tt>fakir</tt>
+          is to provide fake datasets that can be used to teach R. (
+          <a href="https://thinkr-open.github.io/fakir/">
+            website
+          </a>)
+        </li>
+        <li>
+<a href="../packages/NestedCategBayesImpute/index.html">NestedCategBayesImpute</a>:
+    Modeling, Imputing and Generating Synthetic Versions of Nested Categorical Data in the Presence of Impossible Combinations. This tool set provides a set of functions to fit the nested Dirichlet process mixture of products of multinomial distributions (NDPMPM) model for nested categorical household data in the presence of impossible combinations. It has direct applications in imputing missing values for and generating synthetic versions of nested household data (
+          <a href="https://cran.r-project.org/web/packages/NestedCategBayesImpute/NestedCategBayesImpute.pdf">
+            vignette
+          </a>).
+        </li>
+        <li>
+<a href="../packages/NHSRdatasets/index.html">NHSRdatasets</a>:
+	Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
+        </li>
+        <li>
+<a href="../packages/synthACS/index.html">synthACS</a>:
+     Synthetic Microdata and Spatial MicroSimulation Modeling for ACS Data. Provides access to curated American Community Survey (ACS) base tables. Builds synthetic micro-datasets at any user-specified geographic level with ten default attributes; and, conducts spatial microsimulation modeling (SMSM) via simulated annealing (
+          <a href="http://cran.nexr.com/web/packages/synthACS/synthACS.pdf">
+            vignette
+          </a>).
+        </li>
+        <li>
+<a href="../packages/wakefield/index.html">wakefield</a>:
+    A package designed to quickly generate random data sets. The user passes
+<tt>n</tt>
+          (number of rows) and predefined vectors to the
+<tt>r_data_frame</tt>
+          function to produce a
+<tt>dplyr::tbl_df</tt>
+          object (
+          <a href="https://github.com/trinker/wakefield">
+            github repo
+          </a>).
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Imbalanced data
+        </strong>
+      </p>
+      <ul>
+        <li>
+<a href="../packages/ebal/index.html">ebal</a>:
+    Entropy reweighting to create balanced samples. Implements entropy balancing, a data preprocessing procedure that allows users to reweight a dataset such that the covariate distributions in the reweighted data satisfy a set of user specified moment conditions. This can be useful to create balanced samples in observational studies with a binary treatment where the control group data can be reweighted to match the covariate moments in the treatment group. Entropy balancing can also be used to reweight a survey sample to known characteristics from a target population (
+          <a href="https://web.stanford.edu/~jhain/ebalancepage.html">
+            website
+          </a>).
+        </li>
+        <li>
+<a href="../packages/imbalance/index.html">imbalance</a>:
+    Preprocessing Algorithms for Imbalanced DatasetsClass imbalance usually damages the performance of classifiers. This package provides a set of tools to work with imbalanced datasets: novel oversampling algorithms, filtering of instances and evaluation of synthetic instances (
+          <a href="https://github.com/ncordon/imbalance">
+            github repo
+          </a>).
+        </li>
+        <li>
+<tt>IRIC</tt>: 
+	An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification (
+          <a href="https://github.com/shuzhiquan/IRIC">
+            github repo
+          </a>).
+        </li>
+        <li>
+<a href="../packages/ROSE/index.html">ROSE</a>:
+     Random Over-Sampling Examples. Thi package provides functions to deal with binary classification problems in the presence of imbalanced classes. Synthetic balanced samples are generated according to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies to the class imbalance are also provided, as well as different metrics to evaluate a learner accuracy. These are estimated by holdout, bootstrap or cross-validation methods (
+          <a href="https://journal.r-project.org/archive/2014/RJ-2014-008/index.html">
+            Lunardon et al, 2014
+          </a>).
+        </li>
+        <li>
+<a href="../packages/smotefamily/index.html">smotefamily</a>:
+    A Collection of Oversampling Techniques for Class Imbalance Problem Based on SMOTE. A collection of various oversampling techniques developed from SMOTE is provided. SMOTE is a oversampling technique which synthesizes a new minority instance between a pair of one minority instance and one of its K nearest neighbor (
+          <a href="https://cran.r-project.org/web/packages/smotefamily/smotefamily.pdf">
+            vignette
+          </a>).
+        </li>
+        <li>
+<a href="../packages/themis/index.html">themis</a>:
+	Extra Recipes Steps for Dealing with Unbalanced Data. A dataset with an uneven number of cases in each class is said to be unbalanced. Many models produce a subpar performance on unbalanced datasets. A dataset can be balanced by increasing the number of minority cases using
+          <a href="https://arxiv.org/abs/1106.1813">
+            SMOTE 2011
+          </a>,
+          <a href="https://link.springer.com/chapter/10.1007/11538059_91">
+            Borderline-SMOTE 2005
+          </a>
+          and
+          <a href="https://ieeexplore.ieee.org/document/4633969">
+            ADASYN 2008
+          </a>; or by decreasing the number of majority cases using
+          <a href="https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf">
+            NearMiss 2003
+          </a>
+          or
+          <a href="https://ieeexplore.ieee.org/document/4309452">
+            Tomek link removal 1976
+          </a>.
+        </li>
+        <li>
+<a href="../packages/unbalanced/index.html">unbalanced</a>:
+    Racing for Unbalanced Methods Selection. This R package implements some well-known techniques for unbalanced classification tasks and provides a racing strategy to adaptively select the best methods for a given dataset, classification algorithms and accuracy measure adopted (
+          <a href="https://github.com/dalpozz/unbalanced">
+            github repo
+          </a>).
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Miscellaneous
+        </strong>
+      </p>
+      <ul>
+        <li>
+<a href="../packages/bindata/index.html">bindata</a>:
+    Generation of correlated artificial binary data (
+          <a href="http://finzi.psych.upenn.edu/library/bindata/html/00Index.html">
+            website
+          </a>).
+        </li>
+        <li>
+<a href="../packages/GenOrd/index.html">GenOrd</a>:
+    Simulation of Discrete Random Variables with Given Correlation Matrix and Marginal Distributions. A gaussian copula based procedure for generating samples from discrete random variables with prescribed correlation matrix and marginal distributions (
+          <a href="https://rdrr.io/cran/GenOrd/#vignettes">
+            vignette
+          </a>).
+        </li>
+        <li>
+<a href="../packages/MultiOrd/index.html">MultiOrd</a>:
+    An R Package for Generating Correlated Ordinal Data (
+          <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2013.824097?journalCode=lssp20">
+            Amatya &amp; Demirtas, 2014
+          </a>).
+        </li>
+        <li>
+<a href="../packages/PoisBinOrdNonNor/index.html">PoisBinOrdNonNor</a>: 
+	Generation of a chosen number of count, binary, ordinal, and continuous random variables, with specified correlations and marginal properties (
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.5362">
+            Demirtas et al, 2012
+          </a>).
+        </li>
+        <li>
+<a href="../packages/psychmeta/index.html">psychmeta</a>: 
+	The
+<tt>psychmeta</tt>
+          package provides tools for computing bare-bones and psychometric meta-analyses and for generating psychometric data for use in meta-analysis simulations (
+          <a href="https://github.com/psychmeta/psychmeta">
+            github repo
+          </a>).
+        </li>
+        <li>
+<a href="../packages/sgr/index.html">sgr</a>:
+    Sample Generation by Replacement simulations. The package can be used to perform fake data analysis according to the sample generation by replacement approach. It includes functions for making simple inferences about discrete/ordinal fake data. The package allows to study the implications of fake data for empirical results.
+        </li>
+        <li>
+<a href="../packages/SynthTools/index.html">SynthTools</a>:
+    Tools and Tests for Experiments with Partially Synthetic Data Sets. A set of functions to support experimentation in the utility of partially synthetic data sets. All functions compare an observed data set to one or a set of partially synthetic data sets derived from the observed data to (1) check that data sets have identical attributes, (2) calculate overall and specific variable perturbation rates, (3) check for potential logical inconsistencies, and (4) calculate confidence intervals and standard errors of desired variables in multiple imputed data sets. Confidence interval and standard error formulas have options for either synthetic data sets or multiple imputed data sets (
+          <a href="https://github.com/RTIInternational/SynthTools">
+            github repo
+          </a>).
+        </li>
+        <li>
+<a href="../packages/WikidataR/index.html">WikidataR</a>:
+	the API client library for Wikidata (
+          <a href="https://cran.r-project.org/web/packages/WikidataR/vignettes/Introduction.html">
+            vignette
+          </a>)
+        </li>
+      </ul>
+    </div>
+
+  <h3>CRAN packages:</h3>
+  <ul>
+    <li><a href="../packages/bindata/index.html">bindata</a></li>
+    <li><a href="../packages/charlatan/index.html">charlatan</a></li>
+    <li><a href="../packages/conjurer/index.html">conjurer</a></li>
+    <li><a href="../packages/coxed/index.html">coxed</a></li>
+    <li><a href="../packages/ebal/index.html">ebal</a></li>
+    <li><a href="../packages/fabricatr/index.html">fabricatr</a></li>
+    <li><a href="../packages/fakeR/index.html">fakeR</a></li>
+    <li><a href="../packages/gendata/index.html">gendata</a></li>
+    <li><a href="../packages/GenOrd/index.html">GenOrd</a></li>
+    <li><a href="../packages/humanleague/index.html">humanleague</a></li>
+    <li><a href="../packages/imbalance/index.html">imbalance</a></li>
+    <li><a href="../packages/MicSim/index.html">MicSim</a></li>
+    <li><a href="../packages/MultiOrd/index.html">MultiOrd</a></li>
+    <li><a href="../packages/NestedCategBayesImpute/index.html">NestedCategBayesImpute</a></li>
+    <li><a href="../packages/NHSRdatasets/index.html">NHSRdatasets</a></li>
+    <li><a href="../packages/PoisBinOrdNonNor/index.html">PoisBinOrdNonNor</a></li>
+    <li><a href="../packages/psychmeta/index.html">psychmeta</a></li>
+    <li><a href="../packages/rcorpora/index.html">rcorpora</a></li>
+    <li><a href="../packages/ROSE/index.html">ROSE</a></li>
+    <li><a href="../packages/saeSim/index.html">saeSim</a></li>
+    <li><a href="../packages/sdglinkage/index.html">sdglinkage</a></li>
+    <li><a href="../packages/sgr/index.html">sgr</a></li>
+    <li><a href="../packages/SimMultiCorrData/index.html">SimMultiCorrData</a></li>
+    <li><a href="../packages/simPop/index.html">simPop</a></li>
+    <li><a href="../packages/simstudy/index.html">simstudy</a></li>
+    <li><a href="../packages/smotefamily/index.html">smotefamily</a></li>
+    <li><a href="../packages/sms/index.html">sms</a></li>
+    <li><a href="../packages/survsim/index.html">survsim</a></li>
+    <li><a href="../packages/synthACS/index.html">synthACS</a></li>
+    <li><a href="../packages/synthesis/index.html">synthesis</a></li>
+    <li><a href="../packages/synthpop/index.html">synthpop</a></li>
+    <li><a href="../packages/SynthTools/index.html">SynthTools</a></li>
+    <li><a href="../packages/themis/index.html">themis</a></li>
+    <li><a href="../packages/unbalanced/index.html">unbalanced</a></li>
+    <li><a href="../packages/wakefield/index.html">wakefield</a></li>
+    <li><a href="../packages/WikidataR/index.html">WikidataR</a></li>
+  </ul>
+
+  <h3>Related links:</h3>
+  <ul>
+    <li>CRAN Task View: <a href="views.html">views</a></li>
+    <li>CRAN Task View: <a href="MissingData.html">MissingData</a></li>
+    <li>CRAN Task View: <a href="OfficialStatistics.html">OfficialStatistics</a></li>
+    <li><a href="https://cran.r-project.org/web/packages/ctv/vignettes/ctv-howto.pdf">
+  How to write CRAN Task Views
+</a></li>
+    <li><a href="https://github.com/HEADS-FMUP">
+  HEADS - FMUP
+</a></li>
+    <li><a href="https://github.com/balima78/SyntheticData">
+  GitHub repository for this Task View
+</a></li>
+  </ul>
+
+</body>
+</html>

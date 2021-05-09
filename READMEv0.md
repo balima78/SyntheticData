@@ -3,7 +3,7 @@ a draft for a CRAN task view on Synthetic Data
 
 **Maintainer:** Bruno A Lima                                  
 **Contact:**    balima78 at gmail.com                      
-**Version:**    2021-05-09                                     
+**Version:**    2021-04-26                                     
 **URL:**        *no link to CRAN yet*   
 
 <div>
