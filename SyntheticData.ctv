@@ -13,10 +13,10 @@ Testing and validating applications or data products requires the use of data th
 <a href="https://en.wikipedia.org/wiki/Synthetic_data">Wikipedia</a> defines synthetic data as follows: Synthetic data is "any production data applicable to a given situation that are not obtained by direct measurement" according to the McGraw-Hill Dictionary of Scientific and Technical Terms; where Craig S. Mullins, an expert in data management, defines production data as "information that is persistently stored and used by professionals to conduct business processes."
 </p>
 <p>
-Base <strong>R</strong> allow us to genetare data vectors according to different distributions with functions as: <code>rnorm</code>, <code>rexp</code>, <code>rpois</code>, <code>runif</code>, <code>rmultinom</code>, <code>sample</code>...
+Base <strong>R</strong> allow us to genetare data vectors according to different distributions with functions as: <code>rnorm</code>, <code>rexp</code>, <code>rpois</code>, <code>runif</code>, <code>rmultinom</code>, <code>sample</code>... This CRAN task view contains a list of packages that can be used to generate synthetic data. Also, several packages to deal with unbalanced data are listed. 
 </p>
 <p>
-This CRAN task view contains a list of packages that can be used to generate synthetic data. Also, several packages to deal with unbalanced data are listed. 
+The <github>ropensci-archive/opendata#cran-task-view-open-data</github> repository provides information about using R to obtain, parse, manipulate, create, and share open data. Moreover the <view>WebTechnologies</view> addresses how to obtain and parse web-based data. Furthermore, a curated list of R data packages can be found at <github>ropensci-archive/data-packages</github>. 
 </p>
 <p>
 The development of this task view is fairly new and still in its early stages and therefore subject to changes. Suggestions for additions and extensions to the task view maintainer are welcomed.
@@ -31,7 +31,7 @@ The development of this task view is fairly new and still in its early stages an
 	Builds synthetic data applicable across multiple domains. This package also provides flexibility to control data distribution to make it relevant to many industry examples as described in the <a href="https://cran.r-project.org/web/packages/conjurer/vignettes/introduction_to_conjurer.html">vignette</a>.
 	</li>
   <li><github>jknowles/datasynthR</github>:
-    Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R!
+    (not on CRAN) Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R!
   </li>
   <li><pkg>fabricatr</pkg>:
 	This package helps researchers imagine what data will look like before they collect it. Researchers can evaluate alternative analysis strategies, find the best one given how the data will look, and precommit before looking at the realized data (<a href="https://github.com/DeclareDesign/fabricatr">github repo</a>).
@@ -46,7 +46,7 @@ The development of this task view is fairly new and still in its early stages an
     Synthetic Population Generator. An R package for microsynthesising populations from marginal and (optionally) seed data (<a href="https://github.com/virgesmith/humanleague">github repo</a>).
   </li>
   <li><github>OpenSDP/OpenSDPsynthR</github>:
-    Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
+   (not on CRAN) Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
   </li>
   <li><pkg>sdglinkage</pkg>: 
 	Synthetic Data Generation for Linkage Methods Development. A tool for synthetic data generation that can be used for linkage method development, with elements of i) gold standard file with complete and accurate information and ii) linkage files that are corrupted as we often see in raw dataset.
@@ -90,28 +90,6 @@ The development of this task view is fairly new and still in its early stages an
   </li>
 </ul>
 
-<p><strong>Datasets</strong></p>
-<ul>
-  <li><pkg>rcorpora</pkg>: 
-	A collection of small text corpora of interesting data. Some examples: names of animals: birds, dinosaurs, dogs; foods: beer categories, pizza toppings; geography: English towns, rivers, oceans; humans: authors, US presidents, occupations; science: elements, planets; words: adjectives, verbs, proverbs, US president quotes (<a href="https://github.com/gaborcsardi/rcorpora">github repo</a>).
-  </li>
-  <li><github>ThinkR-open/fakir</github>:
-    The goal of <code>fakir</code> is to provide fake datasets that can be used to teach R.
-  </li>
-  <li><pkg>NestedCategBayesImpute</pkg>:
-    Modeling, Imputing and Generating Synthetic Versions of Nested Categorical Data in the Presence of Impossible Combinations. This tool set provides a set of functions to fit the nested Dirichlet process mixture of products of multinomial distributions (NDPMPM) model for nested categorical household data in the presence of impossible combinations. It has direct applications in imputing missing values for and generating synthetic versions of nested household data (<a href="https://cran.r-project.org/web/packages/NestedCategBayesImpute/NestedCategBayesImpute.pdf">vignette</a>).
-  </li>
-  <li><pkg>NHSRdatasets</pkg>:
-	Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
-  </li>
-  <li><pkg>synthACS</pkg>:
-     Synthetic Microdata and Spatial MicroSimulation Modeling for ACS Data. Provides access to curated American Community Survey (ACS) base tables. Builds synthetic micro-datasets at any user-specified geographic level with ten default attributes; and, conducts spatial microsimulation modeling (SMSM) via simulated annealing (<a href="http://cran.nexr.com/web/packages/synthACS/synthACS.pdf">vignette</a>).
-  </li>
-  <li><pkg>wakefield</pkg>:
-    A package designed to quickly generate random data sets. The user passes <code>n</code> (number of rows) and predefined vectors to the <code>r_data_frame</code> function to produce a <code>dplyr::tbl_df</code> object (<a href="https://github.com/trinker/wakefield">github repo</a>).
-  </li>
-</ul>
-
 <p><strong>Imbalanced data</strong></p>
 <ul>
   <li><pkg>ebal</pkg>:
@@ -121,7 +99,7 @@ The development of this task view is fairly new and still in its early stages an
     Preprocessing Algorithms for Imbalanced DatasetsClass imbalance usually damages the performance of classifiers. This package provides a set of tools to work with imbalanced datasets: novel oversampling algorithms, filtering of instances and evaluation of synthetic instances (<a href="https://github.com/ncordon/imbalance">github repo</a>).
   </li>
   <li><github>shuzhiquan/IRIC</github>: 
-	An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification.
+	(not on CRAN) An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification.
   </li>
   <li><pkg>ROSE</pkg>:
      Random Over-Sampling Examples. Thi package provides functions to deal with binary classification problems in the presence of imbalanced classes. Synthetic balanced samples are generated according to ROSE (Menardi and Torelli, 2013). Functions that implement more traditional remedies to the class imbalance are also provided, as well as different metrics to evaluate a learner accuracy. These are estimated by holdout, bootstrap or cross-validation methods (<a href="https://journal.r-project.org/archive/2014/RJ-2014-008/index.html">Lunardon et al, 2014</a>).
@@ -145,8 +123,17 @@ The development of this task view is fairly new and still in its early stages an
   <li><pkg>GenOrd</pkg>:
     Simulation of Discrete Random Variables with Given Correlation Matrix and Marginal Distributions. A gaussian copula based procedure for generating samples from discrete random variables with prescribed correlation matrix and marginal distributions (<a href="https://rdrr.io/cran/GenOrd/#vignettes">vignette</a>).
   </li>
+  <li><github>ThinkR-open/fakir</github>:
+  (not on CRAN)  The goal of <code>fakir</code> is to provide fake datasets that can be used to teach R.
+  </li>
   <li><pkg>MultiOrd</pkg>:
     An R Package for Generating Correlated Ordinal Data (<a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2013.824097?journalCode=lssp20">Amatya &amp; Demirtas, 2014</a>).
+  </li>
+  <li><pkg>NestedCategBayesImpute</pkg>:
+  Modeling, Imputing and Generating Synthetic Versions of Nested Categorical Data in the Presence of Impossible Combinations. This tool set provides a set of functions to fit the nested Dirichlet process mixture of products of multinomial distributions (NDPMPM) model for nested categorical household data in the presence of impossible combinations. It has direct applications in imputing missing values for and generating synthetic versions of nested household data (<a href="https://cran.r-project.org/web/packages/NestedCategBayesImpute/NestedCategBayesImpute.pdf">vignette</a>).
+  </li>
+  <li><pkg>NHSRdatasets</pkg>:
+	Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
   </li>
   <li><pkg>PoisBinOrdNonNor</pkg>: 
 	Generation of a chosen number of count, binary, ordinal, and continuous random variables, with specified correlations and marginal properties (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.5362">Demirtas et al, 2012</a>).
@@ -157,11 +144,14 @@ The development of this task view is fairly new and still in its early stages an
   <li><pkg>sgr</pkg>:
     Sample Generation by Replacement simulations. The package can be used to perform fake data analysis according to the sample generation by replacement approach. It includes functions for making simple inferences about discrete/ordinal fake data. The package allows to study the implications of fake data for empirical results.
   </li>
+  <li><pkg>synthACS</pkg>:
+  Synthetic Microdata and Spatial MicroSimulation Modeling for ACS Data. Provides access to curated American Community Survey (ACS) base tables. Builds synthetic micro-datasets at any user-specified geographic level with ten default attributes; and, conducts spatial microsimulation modeling (SMSM) via simulated annealing (<a href="http://cran.nexr.com/web/packages/synthACS/synthACS.pdf">vignette</a>).
+  </li>
   <li><pkg>SynthTools</pkg>:
     Tools and Tests for Experiments with Partially Synthetic Data Sets. A set of functions to support experimentation in the utility of partially synthetic data sets. All functions compare an observed data set to one or a set of partially synthetic data sets derived from the observed data to (1) check that data sets have identical attributes, (2) calculate overall and specific variable perturbation rates, (3) check for potential logical inconsistencies, and (4) calculate confidence intervals and standard errors of desired variables in multiple imputed data sets. Confidence interval and standard error formulas have options for either synthetic data sets or multiple imputed data sets (<a href="https://github.com/RTIInternational/SynthTools">github repo</a>).
   </li>
-  <li><pkg>WikidataR</pkg>:
-	the API client library for Wikidata (<a href="https://cran.r-project.org/web/packages/WikidataR/vignettes/Introduction.html">vignette</a>)
+  <li><pkg>wakefield</pkg>:
+    A package designed to quickly generate random data sets. The user passes <code>n</code> (number of rows) and predefined vectors to the <code>r_data_frame</code> function to produce a <code>dplyr::tbl_df</code> object (<a href="https://github.com/trinker/wakefield">github repo</a>).
   </li>
 </ul>
 
@@ -185,7 +175,6 @@ The development of this task view is fairly new and still in its early stages an
   <pkg>NHSRdatasets</pkg>
   <pkg>PoisBinOrdNonNor</pkg>
   <pkg>psychmeta</pkg>
-  <pkg>rcorpora</pkg>
   <pkg>ROSE</pkg>
   <pkg>saeSim</pkg>
   <pkg>sdglinkage</pkg>
@@ -203,14 +192,15 @@ The development of this task view is fairly new and still in its early stages an
   <pkg>themis</pkg>
   <pkg>unbalanced</pkg>
   <pkg>wakefield</pkg>
-  <pkg>WikidataR</pkg>
 </packagelist>
 
 <links>
     <view>views</view>
     <view>MissingData</view>
     <view>OfficialStatistics</view>
-	<a href="https://cran.r-project.org/web/packages/ctv/vignettes/ctv-howto.pdf">How to write CRAN Task Views</a>
+    <view>WebTechnologies</view>
+    <a href="https://cran.r-project.org/web/packages/ctv/vignettes/ctv-howto.pdf">How to write CRAN Task Views</a>
+    <a href="https://github.com/joofio/awesome-data-synthesis">awesome-data-synthesis</a>
     <a href="https://github.com/HEADS-FMUP">HEADS - FMUP</a>
     <a href="https://github.com/balima78/SyntheticData">GitHub repository for this Task View</a>
 </links>

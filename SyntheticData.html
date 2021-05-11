@@ -44,10 +44,15 @@
 <tt>rpois</tt>,
 <tt>runif</tt>,
 <tt>rmultinom</tt>,
-<tt>sample</tt>...
+<tt>sample</tt>... This CRAN task view contains a list of packages that can be used to generate synthetic data. Also, several packages to deal with unbalanced data are listed.
       </p>
       <p>
-        This CRAN task view contains a list of packages that can be used to generate synthetic data. Also, several packages to deal with unbalanced data are listed.
+        The
+<a href="https://github.com/ropensci-archive/opendata#cran-task-view-open-data/"><span class="GitHub">opendata#cran-task-view-open-data</span></a>
+        repository provides information about using R to obtain, parse, manipulate, create, and share open data. Moreover the
+<a href="WebTechnologies.html">WebTechnologies</a>
+        addresses how to obtain and parse web-based data. Furthermore, a curated list of R data packages can be found at
+<a href="https://github.com/ropensci-archive/data-packages/"><span class="GitHub">data-packages</span></a>.
       </p>
       <p>
         The development of this task view is fairly new and still in its early stages and therefore subject to changes. Suggestions for additions and extensions to the task view maintainer are welcomed.
@@ -74,7 +79,7 @@
         </li>
         <li>
 <a href="https://github.com/jknowles/datasynthR/"><span class="GitHub">datasynthR</span></a>:
-    Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R!
+    (not on CRAN) Functions to procedurally generate synthetic data in R for testing and collaboration. Allows the user to generate data of known distributional properties with known correlation structures. This is useful for testing statistical model data, building functions to operate on very large datasets, or training others in using R!
         </li>
         <li>
 <a href="../packages/fabricatr/index.html">fabricatr</a>:
@@ -111,7 +116,7 @@
         </li>
         <li>
 <a href="https://github.com/OpenSDP/OpenSDPsynthR/"><span class="GitHub">OpenSDPsynthR</span></a>:
-    Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
+   (not on CRAN) Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
         </li>
         <li>
 <a href="../packages/sdglinkage/index.html">sdglinkage</a>: 
@@ -210,57 +215,6 @@
       </ul>
       <p>
         <strong>
-          Datasets
-        </strong>
-      </p>
-      <ul>
-        <li>
-<a href="../packages/rcorpora/index.html">rcorpora</a>: 
-	A collection of small text corpora of interesting data. Some examples: names of animals: birds, dinosaurs, dogs; foods: beer categories, pizza toppings; geography: English towns, rivers, oceans; humans: authors, US presidents, occupations; science: elements, planets; words: adjectives, verbs, proverbs, US president quotes (
-          <a href="https://github.com/gaborcsardi/rcorpora">
-            github repo
-          </a>).
-        </li>
-        <li>
-<a href="https://github.com/ThinkR-open/fakir/"><span class="GitHub">fakir</span></a>:
-    The goal of
-<tt>fakir</tt>
-          is to provide fake datasets that can be used to teach R.
-        </li>
-        <li>
-<a href="../packages/NestedCategBayesImpute/index.html">NestedCategBayesImpute</a>:
-    Modeling, Imputing and Generating Synthetic Versions of Nested Categorical Data in the Presence of Impossible Combinations. This tool set provides a set of functions to fit the nested Dirichlet process mixture of products of multinomial distributions (NDPMPM) model for nested categorical household data in the presence of impossible combinations. It has direct applications in imputing missing values for and generating synthetic versions of nested household data (
-          <a href="https://cran.r-project.org/web/packages/NestedCategBayesImpute/NestedCategBayesImpute.pdf">
-            vignette
-          </a>).
-        </li>
-        <li>
-<a href="../packages/NHSRdatasets/index.html">NHSRdatasets</a>:
-	Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
-        </li>
-        <li>
-<a href="../packages/synthACS/index.html">synthACS</a>:
-     Synthetic Microdata and Spatial MicroSimulation Modeling for ACS Data. Provides access to curated American Community Survey (ACS) base tables. Builds synthetic micro-datasets at any user-specified geographic level with ten default attributes; and, conducts spatial microsimulation modeling (SMSM) via simulated annealing (
-          <a href="http://cran.nexr.com/web/packages/synthACS/synthACS.pdf">
-            vignette
-          </a>).
-        </li>
-        <li>
-<a href="../packages/wakefield/index.html">wakefield</a>:
-    A package designed to quickly generate random data sets. The user passes
-<tt>n</tt>
-          (number of rows) and predefined vectors to the
-<tt>r_data_frame</tt>
-          function to produce a
-<tt>dplyr::tbl_df</tt>
-          object (
-          <a href="https://github.com/trinker/wakefield">
-            github repo
-          </a>).
-        </li>
-      </ul>
-      <p>
-        <strong>
           Imbalanced data
         </strong>
       </p>
@@ -281,7 +235,7 @@
         </li>
         <li>
 <a href="https://github.com/shuzhiquan/IRIC/"><span class="GitHub">IRIC</span></a>: 
-	An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification.
+	(not on CRAN) An R library for binary imbalanced classification. Integrates a wide set of solutions for imbalanced binary classification.
         </li>
         <li>
 <a href="../packages/ROSE/index.html">ROSE</a>:
@@ -347,11 +301,28 @@
           </a>).
         </li>
         <li>
+<a href="https://github.com/ThinkR-open/fakir/"><span class="GitHub">fakir</span></a>:
+  (not on CRAN)  The goal of
+<tt>fakir</tt>
+          is to provide fake datasets that can be used to teach R.
+        </li>
+        <li>
 <a href="../packages/MultiOrd/index.html">MultiOrd</a>:
     An R Package for Generating Correlated Ordinal Data (
           <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2013.824097?journalCode=lssp20">
             Amatya &amp; Demirtas, 2014
           </a>).
+        </li>
+        <li>
+<a href="../packages/NestedCategBayesImpute/index.html">NestedCategBayesImpute</a>:
+  Modeling, Imputing and Generating Synthetic Versions of Nested Categorical Data in the Presence of Impossible Combinations. This tool set provides a set of functions to fit the nested Dirichlet process mixture of products of multinomial distributions (NDPMPM) model for nested categorical household data in the presence of impossible combinations. It has direct applications in imputing missing values for and generating synthetic versions of nested household data (
+          <a href="https://cran.r-project.org/web/packages/NestedCategBayesImpute/NestedCategBayesImpute.pdf">
+            vignette
+          </a>).
+        </li>
+        <li>
+<a href="../packages/NHSRdatasets/index.html">NHSRdatasets</a>:
+	Free United Kingdom National Health Service (NHS) and other healthcare, or population health-related data for education and training purposes. This package contains synthetic data based on real healthcare datasets, or cuts of open-licenced official data.
         </li>
         <li>
 <a href="../packages/PoisBinOrdNonNor/index.html">PoisBinOrdNonNor</a>: 
@@ -372,6 +343,13 @@
     Sample Generation by Replacement simulations. The package can be used to perform fake data analysis according to the sample generation by replacement approach. It includes functions for making simple inferences about discrete/ordinal fake data. The package allows to study the implications of fake data for empirical results.
         </li>
         <li>
+<a href="../packages/synthACS/index.html">synthACS</a>:
+  Synthetic Microdata and Spatial MicroSimulation Modeling for ACS Data. Provides access to curated American Community Survey (ACS) base tables. Builds synthetic micro-datasets at any user-specified geographic level with ten default attributes; and, conducts spatial microsimulation modeling (SMSM) via simulated annealing (
+          <a href="http://cran.nexr.com/web/packages/synthACS/synthACS.pdf">
+            vignette
+          </a>).
+        </li>
+        <li>
 <a href="../packages/SynthTools/index.html">SynthTools</a>:
     Tools and Tests for Experiments with Partially Synthetic Data Sets. A set of functions to support experimentation in the utility of partially synthetic data sets. All functions compare an observed data set to one or a set of partially synthetic data sets derived from the observed data to (1) check that data sets have identical attributes, (2) calculate overall and specific variable perturbation rates, (3) check for potential logical inconsistencies, and (4) calculate confidence intervals and standard errors of desired variables in multiple imputed data sets. Confidence interval and standard error formulas have options for either synthetic data sets or multiple imputed data sets (
           <a href="https://github.com/RTIInternational/SynthTools">
@@ -379,11 +357,17 @@
           </a>).
         </li>
         <li>
-<a href="../packages/WikidataR/index.html">WikidataR</a>:
-	the API client library for Wikidata (
-          <a href="https://cran.r-project.org/web/packages/WikidataR/vignettes/Introduction.html">
-            vignette
-          </a>)
+<a href="../packages/wakefield/index.html">wakefield</a>:
+    A package designed to quickly generate random data sets. The user passes
+<tt>n</tt>
+          (number of rows) and predefined vectors to the
+<tt>r_data_frame</tt>
+          function to produce a
+<tt>dplyr::tbl_df</tt>
+          object (
+          <a href="https://github.com/trinker/wakefield">
+            github repo
+          </a>).
         </li>
       </ul>
     </div>
@@ -407,7 +391,6 @@
     <li><a href="../packages/NHSRdatasets/index.html">NHSRdatasets</a></li>
     <li><a href="../packages/PoisBinOrdNonNor/index.html">PoisBinOrdNonNor</a></li>
     <li><a href="../packages/psychmeta/index.html">psychmeta</a></li>
-    <li><a href="../packages/rcorpora/index.html">rcorpora</a></li>
     <li><a href="../packages/ROSE/index.html">ROSE</a></li>
     <li><a href="../packages/saeSim/index.html">saeSim</a></li>
     <li><a href="../packages/sdglinkage/index.html">sdglinkage</a></li>
@@ -425,7 +408,6 @@
     <li><a href="../packages/themis/index.html">themis</a></li>
     <li><a href="../packages/unbalanced/index.html">unbalanced</a></li>
     <li><a href="../packages/wakefield/index.html">wakefield</a></li>
-    <li><a href="../packages/WikidataR/index.html">WikidataR</a></li>
   </ul>
 
   <h3>Related links:</h3>
@@ -433,8 +415,12 @@
     <li>CRAN Task View: <a href="views.html">views</a></li>
     <li>CRAN Task View: <a href="MissingData.html">MissingData</a></li>
     <li>CRAN Task View: <a href="OfficialStatistics.html">OfficialStatistics</a></li>
+    <li>CRAN Task View: <a href="WebTechnologies.html">WebTechnologies</a></li>
     <li><a href="https://cran.r-project.org/web/packages/ctv/vignettes/ctv-howto.pdf">
   How to write CRAN Task Views
+</a></li>
+    <li><a href="https://github.com/joofio/awesome-data-synthesis">
+  awesome-data-synthesis
 </a></li>
     <li><a href="https://github.com/HEADS-FMUP">
   HEADS - FMUP
