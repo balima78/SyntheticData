@@ -30,6 +30,7 @@ The development of this task view is fairly new and still in its early stages an
 - [gendata](https://cran.r-project.org/web/packages/gendata/gendata.pdf) - Generate and Modify Synthetic Datasets. Set of functions to create datasets using a correlation matrix.
 - [humanleague](https://github.com/virgesmith/humanleague): Synthetic Population Generator. An R package for microsynthesising populations from marginal and (optionally) seed data. 
 - [OpenSDPsynthR](https://github.com/opensdp/OpenSDPsynthR) (not on CRAN) - Generate synthetic education data that is realistic for use by analysts across the education sector. Synthetic data should be able to be generated on-demand and responsive to inputs from the user.
+- [rstyles](https://cran.r-project.org/web/packages/rstyles/index.html) - Package allows to generate simulated datasets using algorithms that mimic different response styles to survey questions.
 - [sdglinkage](https://rdrr.io/cran/sdglinkage/) - Synthetic Data Generation for Linkage Methods Development. A tool for synthetic data generation that can be used for linkage method development, with elements of i) gold standard file with complete and accurate information and ii) linkage files that are corrupted as we often see in raw dataset.
 - [SimMultiCorrData](https://github.com/AFialkowski/SimMultiCorrData) - The goal of SimMultiCorrData is to generate continuous (normal or non-normal), binary, ordinal, and count (Poisson or Negative Binomial) variables with a specified correlation matrix. It can also produce a single continuous variable. This package can be used to simulate data sets that mimic real-world situations (i.e. clinical data sets, plasmodes, as in Vaughan et al., 2009).
 - [simPop](https://www.jstatsoft.org/article/view/v079i10) - Simulation of Complex Synthetic Data Information. Tools and methods to simulate populations for surveys based on auxiliary data. The tools include model-based methods, calibration and combinatorial optimization algorithms.
@@ -98,6 +99,7 @@ The development of this task view is fairly new and still in its early stages an
 - [PoisBinOrdNonNor](https://cran.r-project.org/web/packages/PoisBinOrdNonNor/index.html)
 - [psychmeta](https://cran.r-project.org/web/packages/psychmeta/index.html)
 - [ROSE](https://cran.r-project.org/web/packages/ROSE/index.html)
+- [rstyles](https://cran.r-project.org/web/packages/rstyles/index.html)
 - [saeSim](https://cran.r-project.org/web/packages/saeSim/index.html)
 - [sdglinkage](https://cran.r-project.org/web/packages/sdglinkage/index.html)
 - [sgr](https://cran.r-project.org/web/packages/sgr/index.html)
