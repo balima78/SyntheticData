@@ -46,6 +46,7 @@ The development of this task view is fairly new and still in its early stages an
 - [sim.survdata()](https://cran.r-project.org/web/packages/coxed/vignettes/simulating_survival_data.html) function allows to generate a survival dataset. This function belongs to the [coxed](https://github.com/jkropko/coxed) package.
 - [fakeR](https://cran.r-project.org/web/packages/fakeR/vignettes/my-vignette.html) - Simulates Data from a Data Frame of Different Variable Types. The package contains the functions `simulate_dataset` and `simulate_dataset_ts` to simulate time-independent and time-dependent data. It randomly samples character and factor variables from contingency tables and numeric and ordered factors from a multivariate normal distribution. It currently supports the simulation of stationary and zero-inflated count time series.
 - [synthesis](https://github.com/zejiang-unsw/synthesis#readme) - Synthetic data generator. Generate synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems.
+- [simK](https://txopen.github.io/simK/index.html) - Functions to procedurally generate synthetic data in R for kidney transplant simulations. `simK` allows to generate data with clinical and demographic information for a pool of simulated cadaveric donors and simulated wait listed candidates for kidney transplantation.
 
 **Imbalanced data**
 
